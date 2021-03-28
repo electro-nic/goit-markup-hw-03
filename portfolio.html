@@ -13,31 +13,31 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="page">
     <!--Header-->
-    <header class="header-portfolio">
-        <nav class="container-header  main-nav">
-            <a href="./index.html" class="logo">Web<span class="logotip">Studio</span></a>
-            <ul class="menu-nav list">
-                <li class="item"><a href="./index.html" class="headlink-studio-link">Студия</a></li>
-                <li class="item"><a href="./portfolio.html" class="headlink-studio-link active-page">Портфолио</a></li>
-                <li class="item"><a href="#contacts" class="headlink-studio-link">Контакты</a></li>
-
+    <header class="page-header border">
+        <div  class="container">
+            <nav class="header-nav">
+                <a href="./index.html" class="logo"><span class="logotip">Web</span>Studio</a>
+                <ul class="site-nav list">
+                    <li class="item"><a href="./index.html" class="link-nav list">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link-nav current list">Портфолио</a></li>
+                    <li class="item"><a href="#contacts" class="link-nav list">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav list">
+                <li class="item"><a href="mailto:info@devstudio.com"  class="link-contacts list">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111"  class="link-contacts list">+38 096 111 11 11</a></li>
             </ul>
-
-        
-            <ul class="contacts list">
-                <li class="item"><a href="mailto:info@devstudio.com"  class="contacts-link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111"  class="contacts-link">+38 096 111 11 11</a></li>
-            </ul>
-        </nav>
+    
+        </div>
     </header>
     <!--Main content-->
     <main>
         <!--Section portfilio-->
-        <section class="container-portfolio">
-           <div class="portfolio">
-                <h1 class="visually">Портфолио</h1>
+        <section class="portfolio">
+           <div class="container">
+                <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="list filter">
                     <li> 
                         <button type="button" class="filter-button">Все</button>
@@ -55,177 +55,144 @@
                         <button type="button" class="filter-button">Маркетинг</button>
                     </li>
                 </ul>
-           </div>
-            <!--Проекты-->
-            <div class="containers-portfolio">
-                <h2 class="visually">Проекты</h2>
-            
-                <ul class="card-set">
-                    <li class="item">
-                        <article class="card">
-                            <div class="card-thumb">
-                               <a href="">
-                                    <img src="./images/portfolio/website.jpg" alt="технокряк" >
-                                </a>
+                <!-- <h2 class="visually-hidden">Проекты</h2> -->
+                <ul class="filter-item list">
+                    <li class="item none">
+                        <a href="" class="filter-link list">
+                            <img src="./images/portfolio/website.jpg" alt="технокряк"  width="370"
+                            class="filter-foto">
+                        </a>
+                            <div class="filter-box">
+                                <h2 class="filter-card-title">Технокряк</h2>
+                                <p class="filter-card-text">Веб-сайт</p>
                             </div>
+                        
+                    </li>
+                    <li class="item none">
+                        <a href="" class="filter-link list"> 
+                            <img src="./images/portfolio/desinger.jpg" alt="постер"   width="370"
+                            class="filter-foto" >
+                        </a>
             
-                            <div class="card-content">
-                                
-                                <h3>Технокряк</h3>
-                                <p class="card-text">Веб-сайт</p>
-                                
+                            <div class="filter-box">
+                                <h2  class="filter-card-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="filter-card-text">Дизайн</p>
                             </div>
-                        </article>
                     </li>
             
-                    <li class="item">
-                        <article class="card">
-                            <div class="card-thumb">
-                                <a href=""> 
-                                    <img src="./images/portfolio/desinger.jpg" alt="постер" >
-                                </a>
-                            </div>
+                    <li class="item none">
+
+                          <a href="" class="filter-link list">  
+                              <img src="./images/portfolio/app.jpg" alt="ресторан"   width="370"
+                              class="filter-foto"> 
             
-                            <div class="card-content">
-                                <h3>Постер New Orlean vs Golden Star</h3>
-                                <p class="card-text">Дизайн</p>
-                            </div>
-                        </article>
-                    </li>
-            
-                    <li class="item">
-                        <article class="card">
-                            <div class="card-thumb">
-                          <a href="">  
-                              <img src="./images/portfolio/app.jpg" alt="ресторан" /> 
-                            </a>
-                            </div>
-            
-                            <div class="card-content">
-                                <h3> Ресторан Seafood</h3>
+                            <div class="filter-box">
+                                <h2> Ресторан Seafood</h2>
                                 <p class="card-text">Приложение</p>
                             </div>
-                        </article>
                     </li>
             
                     <li class="item">
-                        <article class="card">
-                            <div class="card-thumb">
-                             <a href=""> 
-                                     <img src="./images/portfolio/marketing.jpg" alt="маркетинг" />
+                             <a href="" class="filter-link list"> 
+                                     <img src="./images/portfolio/marketing.jpg" alt="маркетинг"   width="370"
+                                     class="filter-foto">
                             </a>
-                            </div>
             
-                            <div class="card-content">
-                                <h3>Проект Prime </h3>
+                            <div class="filter-box">
+                                <h2>Проект Prime </h2>
                                 <p class="card-text">
                                     Маркетинг
                                 </p>
                             </div>
-                        </article>
                     </li>
             
                     <li class="item">
-                        <article class="card">
-                            <div class="card-thumb">
-                               <a href=""> <img src="./images/portfolio/apps.jpg" alt="приложение" />
-                        </a>
-                            </div>
+                                <a href="" class="filter-link list"> <img src="./images/portfolio/apps.jpg" alt="приложение"   width="370"
+                                class="filter-foto">
+                                </a>
             
-                            <div class="card-content">
-                                <h3>Проект Boxes</h3>
+                            <div class="filter-box">
+                                <h2>Проект Boxes</h2>
                                 <p class="card-text">
                                     Приложение
                                 </p>
                             </div>
-                        </article>
                     </li>
             
                     <li class="item">
-                        <article class="card">
-                            <div class="card-thumb">
-                               <a href="">
-                                    <img src="./images/portfolio/inspiration.jpg" alt="веб-сайт" />
-                                    </a>
-                            </div>
+                                <a href="" class="filter-link list">
+                                    <img src="./images/portfolio/inspiration.jpg" alt="веб-сайт"   width="370"
+                                    class="filter-foto">
+                                </a>
             
-                            <div class="card-content">
-                                <h3 class="card-heading">Inspiration has no Borders</h3>
+                            <div class="filter-box">
+                                <h2 class="card-heading">Inspiration has no Borders</h2>
                                 <p class="card-text">
                                     Веб-сайт
                                 </p>
                             </div>
-                        </article>
                     </li>
                     <li class="item">
-                        <article class="card">
-                            <div class="card-thumb">
-                              <a href="">
-                                    <img src="./images/portfolio/weblimitededition.jpg" alt="дизайн" />
-                                 </a>
-                            </div>
+                                <a href="" class="filter-link list">
+                                    <img src="./images/portfolio/weblimitededition.jpg" alt="дизайн"   width="370"
+                                    class="filter-foto">
+                                </a>
                 
-                            <div class="card-content">
-                                <h3 class="card-heading">Издание Limited Edition</h3>
+                            <div class="filter-box">
+                                <h2 class="card-heading">Издание Limited Edition</h2>
                                 <p class="card-text">
                                     Дизайн
                                 </p>
                             </div>
-                        </article>
                     </li>
                     
                     <li class="item">
-                            <article class="card">
-                                <div class="card-thumb">
-                                  <a href="">
-                                    <img src="./images/portfolio/lab.jpg" alt="маркетинг2"  />
-                                 </a>
-                                </div>
+                                <a href="" class="filter-link list">
+                                    <img src="./images/portfolio/lab.jpg" alt="маркетинг2"    width="370"
+                                    class="filter-foto">
+                                </a>
                     
-                                <div class="card-content">
-                                    <h3 class="card-heading">Проект LAB</h3>
+                                <div class="filter-box">
+                                    <h2 class="card-heading">Проект LAB</h2>
                                     <p class="card-text">
                                         Маркетинг
                                     </p>
                                 </div>
-                            </article>
                     </li>
                        
                     <li class="item">
-                                <article class="card">
-                                    <div class="card-thumb">
-                                     <a href="">
-                                            <img src="./images/portfolio/business.jpg" alt="бизнес" />
-                                     </a>
-                                    </div>
+                                <a href="" class="filter-link list">
+                                    <img src="./images/portfolio/business.jpg" alt="бизнес"   width="370"
+                                    class="filter-foto">
+                                </a>
                         
-                                    <div class="card-content">
-                                        <h3 class="card-heading">Growing Business</h3>
-                                        <p class="card-text">
-                                          Приложение
-                                        </p>
-                                    </div>
-                                </article>
+                                <div class="filter-box">
+                                    <h2 class="card-heading">Growing Business</h2>
+                                    <p class="card-text">
+                                        Приложение
+                                    </p>
+                                </div>
                     </li>
                 </ul>
             </div>
         </section>
         
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <a href="" class="link footer-logo-style"><span class="footer-logo-color">Web</span>Studio</a>
-            <address>
+            <a href="./index.html" class="logo logo-end"><span class="logo-color">Web</span><span class="logo-color">Studio</span></a>
+            <address class="address" id="contacts">
                 
-            <ul>
+            <ul class="address-list list">
                 <li>
-                <a href="" class="footer-address"> г. Киев, пр-т Леси Украинки, 26 </a>
+                <a href="https://goo.gl/maps/1DNoKF33UTmtUTMx8" target="_blank" rel="noopener noreferrer"
+                class="address-map list"> г. Киев, пр-т Леси Украинки, 26 </a>
                 </li>
                 <li>
-                    <a href="mailto:info@example.com" class="link footer-mail">info@example.com</a>
+                    <a href="mailto:info@example.com" class="address-contacts list">info@example.com</a>
                 </li>
                 <li>
-                    <a href="tel:+380991111111" class="link footer-telephone">+38 099 111 11 11</a>
+                    <a href="tel:+380991111111" class="address-contacts list">+38 099 111 11 11</a>
                 </li>
             </ul>
             </address>
